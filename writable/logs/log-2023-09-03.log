@@ -1,0 +1,491 @@
+ERROR - 2023-09-03 00:45:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_devphp', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-03 00:45:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+ERROR - 2023-09-03 02:45:27 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'devphp' in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'devphp', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(28): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'devphp' in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(28): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-03 02:45:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'devphp'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\login.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+ERROR - 2023-09-03 02:46:28 --> mysqli_sql_exception: Table 'db_devphp.db_users' doesn't exist in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(28): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-09-03 02:46:28 --> Table 'db_devphp.db_users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `db_users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\login.php(28): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 03:15:04 --> Undefined variable $users
+in APPPATH\Views\user.php on line 23.
+ 1 APPPATH\Views\user.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user', [], true)
+ 5 APPPATH\Controllers\user.php(12): view('user')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 03:15:06 --> Undefined variable $users
+in APPPATH\Views\user.php on line 23.
+ 1 APPPATH\Views\user.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user', [], true)
+ 5 APPPATH\Controllers\user.php(12): view('user')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 03:16:22 --> Invalid file: "user/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\user.php(16): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 03:19:15 --> Undefined array key "email"
+in APPPATH\Views\user.php on line 27.
+ 1 APPPATH\Views\user.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user', [], true)
+ 5 APPPATH\Controllers\user.php(16): view('user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 03:21:05 --> Undefined array key "email"
+in APPPATH\Views\user.php on line 27.
+ 1 APPPATH\Views\user.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user', [], true)
+ 5 APPPATH\Controllers\user.php(16): view('user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 03:41:13 --> Undefined array key "email"
+in APPPATH\Views\user.php on line 27.
+ 1 APPPATH\Views\user.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user', [], true)
+ 5 APPPATH\Controllers\user.php(16): view('user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:36:27 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(23): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:36:31 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(23): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:37:35 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(23): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:39:25 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(23): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:40:54 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:41:19 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:41:49 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:42:23 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:42:46 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:42:51 --> Undefined array key "foto_url"
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_url"', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:46:19 --> Undefined variable $users
+in APPPATH\Views\Pegawai.php on line 75.
+ 1 APPPATH\Views\Pegawai.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php', 75)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 05:47:28 --> Cannot access offset of type string on string
+in APPPATH\Views\Pegawai.php on line 77.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pegawai', [], true)
+ 4 APPPATH\Controllers\Pegawai.php(20): view('pegawai', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 07:27:41 --> Invalid file: "create_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create_user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('create_user', [], true)
+ 3 APPPATH\Controllers\User.php(63): view('create_user')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->create()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 07:30:13 --> Invalid file: "create_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create_user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('create_user', [], true)
+ 3 APPPATH\Controllers\User.php(63): view('create_user')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->create()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 07:30:52 --> Invalid file: "create_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create_user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('create_user', [], true)
+ 3 APPPATH\Controllers\User.php(63): view('create_user')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->create()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 07:31:22 --> Invalid file: "create_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create_user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('create_user', [], true)
+ 3 APPPATH\Controllers\User.php(63): view('create_user')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->create()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 08:56:24 --> Undefined variable $formAction
+in APPPATH\Views\CreatePegawai.php on line 15.
+ 1 APPPATH\Views\CreatePegawai.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formAction', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('createpegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(48): view('createpegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->create()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 08:58:21 --> Undefined variable $formAction
+in APPPATH\Views\CreatePegawai.php on line 15.
+ 1 APPPATH\Views\CreatePegawai.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formAction', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('createpegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(48): view('createpegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->create()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 08:59:56 --> Undefined variable $title
+in APPPATH\Views\CreatePegawai.php on line 7.
+ 1 APPPATH\Views\CreatePegawai.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('createpegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(48): view('createpegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->create()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 09:00:13 --> Invalid file: "editpegawai.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editpegawai.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('editpegawai', [], true)
+ 3 APPPATH\Controllers\Pegawai.php(92): view('editpegawai', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 09:00:16 --> Undefined variable $title
+in APPPATH\Views\CreatePegawai.php on line 7.
+ 1 APPPATH\Views\CreatePegawai.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('createpegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(48): view('createpegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->create()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 09:01:33 --> Undefined variable $title
+in APPPATH\Views\CreatePegawai.php on line 7.
+ 1 APPPATH\Views\CreatePegawai.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('createpegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(53): view('createpegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->create()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 09:01:37 --> Undefined variable $title
+in APPPATH\Views\CreatePegawai.php on line 7.
+ 1 APPPATH\Views\CreatePegawai.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\CreatePegawai.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('createpegawai', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(53): view('createpegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->create()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 09:07:05 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Pegawai.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->edit('2')
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 10:10:28 --> CodeIgniter\Validation\Validation::setRule(): Argument #4 ($errors) must be of type array, Closure given, called in C:\xampp\htdocs\phpdevtest\app\Controllers\Pegawai.php on line 52
+in SYSTEMPATH\Validation\Validation.php on line 513.
+ 1 APPPATH\Controllers\Pegawai.php(52): CodeIgniter\Validation\Validation->setRule('custom', 'Ukuran file foto melebihi 300KB.', 'foto_check', Object(Closure))
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->create()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 10:20:19 --> "custom" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('custom')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('foto', 'foto', null, [...], [...])
+ 3 APPPATH\Controllers\Pegawai.php(100): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-03 10:22:15 --> "custom" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('custom')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('foto', 'foto', null, [...], [...])
+ 3 APPPATH\Controllers\Pegawai.php(51): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Pegawai->create()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')

@@ -1,0 +1,474 @@
+CRITICAL - 2023-09-02 16:49:08 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-09-02 16:49:08 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\phpdevtest\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\phpdevtest\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\phpdevtest\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\phpdevtest\system\Debug\ExceptionHandler.php(78): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\phpdevtest\system\Debug\Exceptions.php(146): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\phpdevtest\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-02 16:59:41 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-09-02 16:59:42 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\phpdevtest\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\phpdevtest\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\phpdevtest\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\phpdevtest\system\Debug\ExceptionHandler.php(78): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\phpdevtest\system\Debug\Exceptions.php(146): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\phpdevtest\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-02 17:01:29 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-09-02 17:01:29 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\phpdevtest\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\phpdevtest\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\phpdevtest\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\phpdevtest\system\Debug\ExceptionHandler.php(78): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\phpdevtest\system\Debug\Exceptions.php(146): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\phpdevtest\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-02 17:03:43 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-09-02 17:03:43 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\phpdevtest\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\phpdevtest\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\phpdevtest\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\phpdevtest\system\Debug\ExceptionHandler.php(78): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\phpdevtest\system\Debug\Exceptions.php(146): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\phpdevtest\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-09-02 15:07:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\User->index()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\User->index()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-02 15:07:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+ERROR - 2023-09-02 15:07:37 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\User->index()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\User->index()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-02 15:07:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+ERROR - 2023-09-02 15:09:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_devphp', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\User->index()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\User->index()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-02 15:09:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+ERROR - 2023-09-02 15:09:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_devphp', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\User->index()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\User->index()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-02 15:09:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\user.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-02 15:10:10 --> Invalid file: "user/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\user.php(18): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-02 15:10:11 --> Invalid file: "user/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\user.php(18): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-02 15:10:12 --> Invalid file: "user/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\user.php(18): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-02 15:10:58 --> Invalid file: "user/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\user.php(18): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-02 16:26:14 --> Undefined variable $users
+in APPPATH\Views\user.php on line 25.
+ 1 APPPATH\Views\user.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user', [], true)
+ 5 APPPATH\Controllers\user.php(12): view('user')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+CRITICAL - 2023-09-02 16:26:16 --> Undefined variable $users
+in APPPATH\Views\user.php on line 25.
+ 1 APPPATH\Views\user.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\phpdevtest\\app\\Views\\user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user', [], true)
+ 5 APPPATH\Controllers\user.php(12): view('user')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+ERROR - 2023-09-02 16:27:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_devphp', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-02 16:27:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+ERROR - 2023-09-02 16:28:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_devphp', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-02 16:28:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
+ERROR - 2023-09-02 16:34:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_devphp', 3306, '', 0)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\phpdevtest\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\phpdevtest\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\phpdevtest\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\phpdevtest\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\phpdevtest\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\phpdevtest\app\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+#7 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\phpdevtest\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\phpdevtest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\phpdevtest\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-09-02 16:34:35 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\login.php(30): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Login->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\phpdevtest\\public\\index.php')
